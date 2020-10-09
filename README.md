@@ -19,6 +19,8 @@ penalizes long and likely overfitting models, such as multiple regression on hig
 collinear datasets, and help balancing accurate but otherwise unstable models (i.e. 
 low bias- high variance models).
 
+## Data description
+
 The notebook summarizes the full data analysis process,
 from exploratory checks, to feature selection and creation, up to model training
 and validation. Lastly, a final test on unseen data revealed the potential of modern
@@ -31,15 +33,19 @@ X= Selected features from a three-year study on rye adaptation at
    Common to each, features recorded or created* at stages GS20, and GS30: 
    remote sensed NDVI, C and N shoot-contents, C/N-ratios*, early-season biomass, 
    tiller-counts, tiller-efficiency relative to seeding rate*, NUE relative to groundbase soil N*.
-   `Files (.csv): data_25, data_30`
+   `Files (.csv): data_25, data_30` --- The column names are straitghforward and self-explanatory
    
-   In addition, a third independent dataset (NC) used for model testing includes features
-   available at GS30. It is included in `data_30.csv`
+   For validation purposes, The observations of two years in NC was hidden at all times from the training and testing phases.
+ 
   
 y= Dry-weight biomass (Kg.ha), Shoot-Nitrogen content (Kg.ha), recorded at GS60
    `colnames in above files: ["biomass_60_y"],["shoot_n_kg_ha_60_y"]`
 
 ## Additional resources:
+
+- This project was peer-reviewed by **Agronomy Journal** and is out now:
+- [https://acsess.onlinelibrary.wiley.com/doi/abs/10.1002/agj2.20429]
+- [https://www.researchgate.net/publication/343949116_Using_statistical_learning_algorithms_to_predict_cover_crop_biomass_and_cover_crop_nitrogen_content]
 
 - To learn more about the integration of digital and data-driven solutions for sustainable
   and profitable agriculture, please visit:
@@ -48,7 +54,7 @@ Precision Sustainable Agriculture
 - [https://precisionsustainableag.org]
 
 Goatech (Gathering for open Agricultural Technology)
-A very cool group of folks who advocate open source hardware and software to meet, learn, share, 
+A group of folks who advocate open source hardware and software to meet, learn, share, 
 and establish a common vision for creating technologies for our food system)
 - [http://goatech.org/]
 
